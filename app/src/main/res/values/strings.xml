@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Github App</string>
+    <string name="home">Home</string>
+    <string name="author_email">dharmayudistira2000@gmail.com</string>
+    <string name="author_name">Dharma Yudistira Eka Putra</string>
+    <string name="this_is_image">this is image</string>
+    <string name="query_hints">Search username</string>
+    <string name="empty_search_message">No results for %s, try another username</string>
+    <string name="empty_data_message">No data found</string>
+    <string name="call_to_search_message">There are no data yet. Let\'s find some user</string>
+    <string name="author_login">dharmayudistira</string>
+    <string name="author_location">Malang</string>
+    <string name="author_company">Google Indonesia</string>
+    <string name="null_location_message">location not set yet</string>
+    <string name="null_company_message">company not set yet</string>
+    <string name="null_name_message">name not set yet</string>
+    <string name="null_login_message">username not set yet</string>
+    <string name="repositories">Repository</string>
+    <string name="dummy_number">0</string>
+    <string name="following">Following</string>
+    <string name="follower">Follower</string>
+    <string name="author_repository_full_name">dharmayudistira/dharmayudistira</string>
+    <string name="dummy_language">Kotlin</string>
+    <string name="no_description_message">No description</string>
+    <string name="unknown_language_message">Unknown language</string>
+    <string name="add_favorite_message">Added to favorite</string>
+    <string name="remove_favorite_message">Removed from favorite</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_settings">Settings</string>
+</resources>

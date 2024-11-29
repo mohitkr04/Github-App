@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pandecode.githubapp.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailUserActivity"
+            app:destination="@id/detailUserActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/detailUserActivity"
+        android:name="com.pandecode.githubapp.ui.detail.DetailUserActivity"
+        android:label="activity_detail_user"
+        tools:layout="@layout/activity_detail_user">
+        <argument
+            android:name="selectedUser"
+            app:argType="string" />
+    </activity>
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.pandecode.githubapp.favorite.ui.FavoriteFragment"
+        android:label="@string/title_favorite"
+        app:moduleName="favorite">
+
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailUserActivity"
+            app:destination="@id/detailUserActivity" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.pandecode.githubapp.settings.ui.SettingsFragment"
+        android:label="@string/title_settings"
+        app:moduleName="settings" />
+
+
+</navigation>

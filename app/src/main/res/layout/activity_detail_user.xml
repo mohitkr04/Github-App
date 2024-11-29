@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.detail.DetailUserActivity">
+
+    <include
+        android:id="@+id/app_bar_detail"
+        layout="@layout/layout_app_bar_detail" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_favorite_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/medium_spacing"
+        android:layout_marginBottom="@dimen/medium_spacing"
+        android:clickable="true"
+        android:contentDescription="@string/this_is_image"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_favorite_off" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
