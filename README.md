@@ -7,7 +7,7 @@ kotlin
 Copy code
 GITHUB_API_KEY="<<REPLACE WITH YOUR GITHUB TOKEN>>"
 How to contribute
-I am open for everyone who wants to improve this app. Feel free to pull-req this repository or contact me personally via email at dharmayudistira2000@gmail.com.
+I am open for everyone who wants to improve this app. Feel free to pull-req this repository or contact me personally via email at mohitgupta.araria@gmail.com.
 
 Features
 Search User: Searching GitHub users using the GitHub API.
