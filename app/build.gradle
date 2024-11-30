@@ -8,12 +8,16 @@ plugins {
 apply from: '../shared_dependencies.gradle'
 
 android {
-    compileSdk 31
+    // Update compileSdk and targetSdk to the latest version
+    compileSdk 34
+
+    // Add namespace as required by AGP 7.0+
+    namespace "com.pandecode.githubapp"
 
     defaultConfig {
         applicationId "com.pandecode.githubapp"
-        minSdk 21
-        targetSdk 31
+        minSdk 24 // Updated to reflect current recommendations
+        targetSdk 34 // Match the compile SDK
         versionCode 1
         versionName "1.0"
 
@@ -28,18 +32,19 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17 // Updated to align with Android Studio 2024
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '18' // Use JVM target 18 for improved performance
     }
 
     buildFeatures {
         viewBinding true
     }
 
+    // Ensure dynamic features list is accurate
     dynamicFeatures = [':favorite', ':settings']
 }
 
