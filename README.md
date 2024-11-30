@@ -53,9 +53,7 @@ I am open for everyone that wants to improve this app. Feel free to pull-req thi
 ## What's next ?
 - Feature
     - [ ] Reminder using work manager
-    - [ ] Localization for english - indonesia
+    - [ ] Localization for english - India
     - [ ] Login
 - App
-    - [ ] Migrate to moshi converter
     - [ ] Implement pagination using Paging 3
-    - [ ] Add CI using circleCI
